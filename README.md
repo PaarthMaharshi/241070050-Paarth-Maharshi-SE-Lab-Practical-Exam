@@ -1,17 +1,58 @@
-Smart Waste Management System - Test Suite
-This Python script simulates the Report Overflowing Bin subsystem. It includes the business logic for processing citizen complaints and a comprehensive test suite covering both Black Box (functional) and White Box (structural) testing methodologies.  
 
-1. Prerequisites
-Python 3.x: Ensure you have Python installed on your system.
 
-Terminal/Command Prompt: You will need a terminal that supports ANSI color codes (most modern terminals like VS Code, macOS Terminal, or Linux Bash) to see the color-coded pass/fail results.  
+---
 
-2. How to Run
-Save the file: Save the provided source code as waste_management_test.py.
+#  Smart Waste Management System – Test Suite
 
-Open your terminal: Navigate to the folder where you saved the file.
+This repository contains a Python-based testing suite for the **Report Overflowing Bin subsystem**, a core component of a Smart Waste Management System.
 
-Execute the script: Run the following command:
+The suite demonstrates advanced software testing methodologies, including:
 
-Bash
-python waste_management_test.py
+*  Functional Testing (**Black Box Testing**)
+*  Structural Testing (**White Box Testing**)
+
+---
+
+###  Thresholds
+
+* Fill levels must be within:
+
+  ```
+  0% ≤ Fill Level ≤ 100%
+  ```
+
+---
+
+###  Decision Matrix
+
+| Condition        | Vehicle Availability | Status               |
+| ---------------- | -------------------- | -------------------- |
+| Fill Level ≥ 80% |  Available          | **DISPATCHED**       |
+| Fill Level ≥ 80% |  Not Available      | **PENDING** (queued) |
+| Fill Level < 80% | —                    | **NORMAL**           |
+
+---
+
+* **Python 3.x**
+  Make sure Python is installed on your system.
+
+* **Modern Terminal (Recommended)**
+  Supports ANSI color codes for better output visualization:
+
+  * VS Code Integrated Terminal
+  * macOS Terminal
+  * Linux Bash
+
+---
+
+### 🛠 Installation & Execution
+
+1. **Save the Script**
+
+   Copy the source code into a file named:
+
+   ```bash
+   test_report_overflowing_bin.py
+   ```
+* Include sample output screenshots
+* Or convert this into a more “portfolio-style” README for projects 🚀
